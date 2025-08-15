@@ -1,0 +1,12 @@
+@mixin my-color-mode($mode: light, $root: false) {
+  @if $root == true {
+    :root,
+    [data-bs-theme="#{$mode}"] {
+      @content;
+    }
+  } @else {
+    [data-bs-theme="#{$mode}"] {
+      @content;
+    }
+  }
+}
