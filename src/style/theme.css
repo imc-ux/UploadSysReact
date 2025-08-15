@@ -1,0 +1,43 @@
+body.ux-green {
+  --primary-color: #08adaa;
+  --secondary-color: #45b19c;
+  --btn-active-color: #064e3b;
+  --active-color: #089390;
+  --active-text-color: #cbd5e1;
+  --submenu-bg-color: #ffffff;
+  --submenu-text-color: #000000;
+  --submenu-text-hover-color: #08adaa;
+}
+
+body.ux-whale {
+  --primary-color: #379cdc;
+  --secondary-color: #2173e1;
+  --btn-active-color: #0c4a6e;
+  --active-color: #2381bd;
+  --active-text-color: #fde68a;
+  --submenu-bg-color: #ffffff;
+  --submenu-text-color: #000000;
+  --submenu-text-hover-color: #379cdc;
+}
+body.ux-garden {
+  --primary-color: #547a14;
+  --secondary-color: #d392d0;
+  --btn-active-color: #34d399;
+  --active-color: #466315;
+  --active-text-color: #fb923c;
+  --submenu-bg-color: #ffffff;
+  --submenu-text-color: #000000;
+  --submenu-text-hover-color: #547a14;
+}
+
+:root,
+body.ux-dark {
+  --primary-color: #454545;
+  --secondary-color: #4a4a4a;
+  --btn-active-color: #343434;
+  --active-color: #466315;
+  --active-text-color: #fb923c;
+  --submenu-bg-color: #141414;
+  --submenu-text-color: #dadada;
+  --submenu-text-hover-color: #4a99ff;
+}

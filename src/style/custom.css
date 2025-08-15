@@ -1,0 +1,25 @@
+.top-menu-item:hover span {
+  transform: rotateX(90deg);
+  background-color: rgba(0, 0, 0, 0.5);
+  transform-origin: 50% 0;
+}
+
+.pop-flip {
+  transform-style: preserve-3d;
+  animation: flip 1s;
+  perspective-origin: 50% 50%;
+}
+
+@keyframes flip {
+  20% {
+    transform: perspective(1000px) rotateX(-20deg);
+    opacity: 1;
+  }
+  40% {
+    opacity: 0.8;
+  }
+  to {
+    transform: perspective(1000px) rotateX(90deg);
+    opacity: 0;
+  }
+}

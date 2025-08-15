@@ -1,0 +1,707 @@
+$prefix: iux-;
+
+$default-theme: ux-green-light;
+
+$ux-green: (
+  "light": (
+    "primary": #406836,
+    "secondary": #54634d,
+    "outlineVariant": #c3c8bc,
+    "secondaryContainer": #d7e8cd,
+    "outline": #73796e,
+    "onOutline": 0 0 0 1px #73796e inset,
+    "outlineContainer": 1px solid #73796e,
+    "background": #f8fbf1,
+    "surfaceContainer": #ecefe5,
+    "onSurface": #191d17,
+    "surfaceContainerHigh": #e6e9e0,
+    "primaryVariant": #406836e6,
+    "onPrimary": #ffffff,
+    "surfaceContainerlow": #f2f5eb,
+    "secondaryContainerVariant": #d7e8cde6,
+    "surfaceContainerHighest": #e1e4da,
+    "surfaceDim": #d8dbd2,
+    "surface": #f8fbf1,
+    "surfaceContainerLowest": #ffffff,
+    "onSurfaceVariant": #43483f,
+    "onSurfaceVariantVariant": #43483fe6,
+    "surfaceDimVariant": #d8dbd2e6,
+    "primaryVariantLowest": #4068361a,
+  ),
+  "dark": (
+    "primary": #a5d396,
+    "secondary": #bbcbb2,
+    "outlineVariant": #43483f,
+    "secondaryContainer": #3c4b37,
+    "outline": #8d9387,
+    "onOutline": 0 0 0 1px #8d9387 inset,
+    "outlineContainer": 1px solid #8d9387,
+    "background": #11140f,
+    "surfaceContainer": #1d211b,
+    "onSurface": #e1e4da,
+    "surfaceContainerHigh": #272b25,
+    "primaryVariant": #a5d396e6,
+    "onPrimary": #11380b,
+    "surfaceContainerlow": #191d17,
+    "secondaryContainerVariant": #3c4b37e6,
+    "surfaceContainerHighest": #32362f,
+    "surfaceDim": #11140f,
+    "surface": #11140f,
+    "surfaceContainerLowest": #0b0f0a,
+    "onSurfaceVariant": #c3c8bc,
+    "onSurfaceVariantVariant": #c3c8bce6,
+    "surfaceDimVariant": #11140fe6,
+    "primaryVariantLowest": #a5d3961a,
+  ),
+);
+
+$ux-base: (
+  "light": (
+    "primary": #65558f,
+    "secondary": #625b71,
+    "outlineVariant": #cac4cf,
+    "secondaryContainer": #e8def8,
+    "outline": #7a757f,
+    "onOutline": 0 0 0 1px #7a757f inset,
+    "outlineContainer": 1px solid #7a757f,
+    "background": #fdf7ff,
+    "surfaceContainer": #f2ecf4,
+    "onSurface": #1d1b20,
+    "surfaceContainerHigh": #ece6ee,
+    "primaryVariant": #65558fe6,
+    "onPrimary": #ffffff,
+    "surfaceContainerlow": #f8f2fa,
+    "secondaryContainerVariant": #e8def8e6,
+    "surfaceContainerHighest": #e6e0e9,
+    "surfaceDim": #ded8e0,
+    "surface": #fdf7ff,
+    "surfaceContainerLowest": #ffffff,
+    "onSurfaceVariant": #49454e,
+    "onSurfaceVariantVariant": #49454ee6,
+    "surfaceDimVariant": #ded8e0e6,
+    "primaryVariantLowest": #65558f1a,
+  ),
+  "dark": (
+    "primary": #cfbdfe,
+    "secondary": #cbc2db,
+    "outlineVariant": #49454e,
+    "secondaryContainer": #4a4458,
+    "outline": #948f99,
+    "onOutline": 0 0 0 1px #948f99 inset,
+    "outlineContainer": 1px solid #948f99,
+    "background": #141218,
+    "surfaceContainer": #211f24,
+    "onSurface": #e6e0e9,
+    "surfaceContainerHigh": #2b292f,
+    "primaryVariant": #cfbdfee6,
+    "onPrimary": #36275d,
+    "surfaceContainerlow": #1d1b20,
+    "secondaryContainerVariant": #4a4458e6,
+    "surfaceContainerHighest": #36343a,
+    "surfaceDim": #141218,
+    "surface": #141218,
+    "surfaceContainerLowest": #0f0d13,
+    "onSurfaceVariant": #cac4cf,
+    "onSurfaceVariantVariant": #cac4cfe6,
+    "surfaceDimVariant": #141218e6,
+    "primaryVariantLowest": #cfbdfe1a,
+  ),
+);
+
+$ux-indigo: (
+  "light": (
+    "primary": #6f528a,
+    "secondary": #665a6f,
+    "outlineVariant": #cdc4ce,
+    "secondaryContainer": #edddf6,
+    "outline": #7c757e,
+    "onOutline": 0 0 0 1px #7c757e inset,
+    "outlineContainer": 1px solid #7c757e,
+    "background": #fff7fe,
+    "surfaceContainer": #f4ebf3,
+    "onSurface": #1e1a20,
+    "surfaceContainerHigh": #eee6ee,
+    "primaryVariant": #6f528ae6,
+    "onPrimary": #ffffff,
+    "surfaceContainerlow": #f9f1f9,
+    "secondaryContainerVariant": #edddf6e6,
+    "surfaceContainerHighest": #e8e0e8,
+    "surfaceDim": #dfd8df,
+    "surface": #fff7fe,
+    "surfaceContainerLowest": #ffffff,
+    "onSurfaceVariant": #4a454e,
+    "onSurfaceVariantVariant": #4a454ee6,
+    "surfaceDimVariant": #dfd8dfe6,
+    "primaryVariantLowest": #6f528a1a,
+  ),
+  "dark": (
+    "primary": #dbb9f9,
+    "secondary": #d0c1d9,
+    "outlineVariant": #4a454e,
+    "secondaryContainer": #4e4356,
+    "outline": #968e98,
+    "onOutline": 0 0 0 1px #968e98 inset,
+    "outlineContainer": 1px solid #968e98,
+    "background": #151217,
+    "surfaceContainer": #221e24,
+    "onSurface": #e8e0e8,
+    "surfaceContainerHigh": #2c292e,
+    "primaryVariant": #dbb9f9e6,
+    "onPrimary": #3f2458,
+    "surfaceContainerlow": #1e1a20,
+    "secondaryContainerVariant": #4e4356e6,
+    "surfaceContainerHighest": #373339,
+    "surfaceDim": #151217,
+    "surface": #151217,
+    "surfaceContainerLowest": #100d12,
+    "onSurfaceVariant": #cdc4ce,
+    "onSurfaceVariantVariant": #cdc4cee6,
+    "surfaceDimVariant": #151217e6,
+    "primaryVariantLowest": #dbb9f91a,
+  ),
+);
+
+$ux-blue: (
+  "light": (
+    "primary": #555992,
+    "secondary": #5c5d72,
+    "outlineVariant": #c7c5d0,
+    "secondaryContainer": #e1e0f9,
+    "outline": #777680,
+    "onOutline": 0 0 0 1px #777680 inset,
+    "outlineContainer": 1px solid #777680,
+    "background": #fbf8ff,
+    "surfaceContainer": #f0ecf4,
+    "onSurface": #1b1b21,
+    "surfaceContainerHigh": #eae7ef,
+    "primaryVariant": #555992e6,
+    "onPrimary": #ffffff,
+    "surfaceContainerlow": #f5f2fa,
+    "secondaryContainerVariant": #e1e0f9e6,
+    "surfaceContainerHighest": #e4e1e9,
+    "surfaceDim": #dbd9e0,
+    "surface": #fbf8ff,
+    "surfaceContainerLowest": #ffffff,
+    "onSurfaceVariant": #46464f,
+    "onSurfaceVariantVariant": #46464fe6,
+    "surfaceDimVariant": #dbd9e0e6,
+    "primaryVariantLowest": #5559921a,
+  ),
+  "dark": (
+    "primary": #bec2ff,
+    "secondary": #c5c4dd,
+    "outlineVariant": #46464f,
+    "secondaryContainer": #444559,
+    "outline": #91909a,
+    "onOutline": 0 0 0 1px #91909a inset,
+    "outlineContainer": 1px solid #91909a,
+    "background": #131318,
+    "surfaceContainer": #1f1f25,
+    "onSurface": #e4e1e9,
+    "surfaceContainerHigh": #2a292f,
+    "primaryVariant": #bec2ffe6,
+    "onPrimary": #272b60,
+    "surfaceContainerlow": #1b1b21,
+    "secondaryContainerVariant": #444559e6,
+    "surfaceContainerHighest": #34343a,
+    "surfaceDim": #131318,
+    "surface": #131318,
+    "surfaceContainerLowest": #0e0e13,
+    "onSurfaceVariant": #c7c5d0,
+    "onSurfaceVariantVariant": #c7c5d0e6,
+    "surfaceDimVariant": #131318e6,
+    "primaryVariantLowest": #bec2ff1a,
+  ),
+);
+
+$ux-teal: (
+  "light": (
+    "primary": #006a6a,
+    "secondary": #4a6363,
+    "outlineVariant": #bec9c8,
+    "secondaryContainer": #cce8e7,
+    "outline": #6f7979,
+    "onOutline": 0 0 0 1px #6f7979 inset,
+    "outlineContainer": 1px solid #6f7979,
+    "background": #f4fbfa,
+    "surfaceContainer": #e9efee,
+    "onSurface": #161d1d,
+    "surfaceContainerHigh": #e3e9e9,
+    "primaryVariant": #006a6ae6,
+    "onPrimary": #ffffff,
+    "surfaceContainerlow": #eff5f4,
+    "secondaryContainerVariant": #cce8e7e6,
+    "surfaceContainerHighest": #dde4e3,
+    "surfaceDim": #d5dbda,
+    "surface": #f4fbfa,
+    "surfaceContainerLowest": #ffffff,
+    "onSurfaceVariant": #3f4948,
+    "onSurfaceVariantVariant": #3f4948e6,
+    "surfaceDimVariant": #d5dbdae6,
+    "primaryVariantLowest": #006a6a1a,
+  ),
+  "dark": (
+    "primary": #80d5d4,
+    "secondary": #b0cccb,
+    "outlineVariant": #3f4948,
+    "secondaryContainer": #324b4b,
+    "outline": #889392,
+    "onOutline": 0 0 0 1px #889392 inset,
+    "outlineContainer": 1px solid #889392,
+    "background": #0e1514,
+    "surfaceContainer": #1a2121,
+    "onSurface": #dde4e3,
+    "surfaceContainerHigh": #252b2b,
+    "primaryVariant": #80d5d4e6,
+    "onPrimary": #003737,
+    "surfaceContainerlow": #161d1d,
+    "secondaryContainerVariant": #324b4be6,
+    "surfaceContainerHighest": #2f3636,
+    "surfaceDim": #0e1514,
+    "surface": #0e1514,
+    "surfaceContainerLowest": #090f0f,
+    "onSurfaceVariant": #3f4948,
+    "onSurfaceVariantVariant": #3f4948e6,
+    "surfaceDimVariant": #0e1514e6,
+    "primaryVariantLowest": #80d5d41a,
+  ),
+);
+
+$ux-yellow: (
+  "light": (
+    "primary": #616118,
+    "secondary": #606043,
+    "outlineVariant": #cac7b6,
+    "secondaryContainer": #e7e4bf,
+    "outline": #797869,
+    "onOutline": 0 0 0 1px #797869 inset,
+    "outlineContainer": 1px solid #797869,
+    "background": #fdf9ec,
+    "surfaceContainer": #f1eee0,
+    "onSurface": #1c1c14,
+    "surfaceContainerHigh": #ece8db,
+    "primaryVariant": #616118e6,
+    "onPrimary": #ffffff,
+    "surfaceContainerlow": #f7f4e6,
+    "secondaryContainerVariant": #e7e4bfe6,
+    "surfaceContainerHighest": #e6e3d5,
+    "surfaceDim": #dddacd,
+    "surface": #fdf9ec,
+    "surfaceContainerLowest": #ffffff,
+    "onSurfaceVariant": #e6e3d1,
+    "onSurfaceVariantVariant": #e6e3d1e6,
+    "surfaceDimVariant": #dddacde6,
+    "primaryVariantLowest": #6161181a,
+  ),
+  "dark": (
+    "primary": #cbcb76,
+    "secondary": #323125,
+    "outlineVariant": #48473a,
+    "secondaryContainer": #49482d,
+    "outline": #939182,
+    "onOutline": 0 0 0 1px #939182 inset,
+    "outlineContainer": 1px solid #939182,
+    "background": #14140c,
+    "surfaceContainer": #202018,
+    "onSurface": #e6e3d5,
+    "surfaceContainerHigh": #2b2a22,
+    "primaryVariant": #cbcb76e6,
+    "onPrimary": #323200,
+    "surfaceContainerlow": #1c1c14,
+    "secondaryContainerVariant": #49482de6,
+    "surfaceContainerHighest": #36352c,
+    "surfaceDim": #14140c,
+    "surface": #14140c,
+    "surfaceContainerLowest": #0f0f07,
+    "onSurfaceVariant": #cac7b6,
+    "onSurfaceVariantVariant": #cac7b6e6,
+    "surfaceDimVariant": #14140ce6,
+    "primaryVariantLowest": #cbcb761a,
+  ),
+);
+
+$ux-orange: (
+  "light": (
+    "primary": #815512,
+    "secondary": #705b41,
+    "outlineVariant": #d4c4b5,
+    "secondaryContainer": #fcdebc,
+    "outline": #827568,
+    "onOutline": 0 0 0 1px #827568 inset,
+    "outlineContainer": 1px solid #827568,
+    "background": #fff8f4,
+    "surfaceContainer": #f9ece0,
+    "onSurface": #211a13,
+    "surfaceContainerHigh": #f3e6da,
+    "primaryVariant": #815512e6,
+    "onPrimary": #ffffff,
+    "surfaceContainerlow": #fff1e5,
+    "secondaryContainerVariant": #fcdebce6,
+    "surfaceContainerHighest": #eee0d4,
+    "surfaceDim": #e5d8cc,
+    "surface": #fff8f4,
+    "surfaceContainerLowest": #ffffff,
+    "onSurfaceVariant": #f0e0d0,
+    "onSurfaceVariantVariant": #f0e0d0e6,
+    "surfaceDimVariant": #e5d8cce6,
+    "primaryVariantLowest": #8155121a,
+  ),
+  "dark": (
+    "primary": #f7bb70,
+    "secondary": #dfc2a2,
+    "outlineVariant": #504539,
+    "secondaryContainer": #57432b,
+    "outline": #9c8e80,
+    "onOutline": 0 0 0 1px #9c8e80 inset,
+    "outlineContainer": 1px solid #9c8e80,
+    "background": #18120c,
+    "surfaceContainer": #251e17,
+    "onSurface": #eee0d4,
+    "surfaceContainerHigh": #302921,
+    "primaryVariant": #f7bb70e6,
+    "onPrimary": #462a00,
+    "surfaceContainerlow": #211a13,
+    "secondaryContainerVariant": #57432be6,
+    "surfaceContainerHighest": #3b332b,
+    "surfaceDim": #18120c,
+    "surface": #18120c,
+    "surfaceContainerLowest": #130d07,
+    "onSurfaceVariant": #d4c4b5,
+    "onSurfaceVariantVariant": #d4c4b5e6,
+    "surfaceDimVariant": #18120ce6,
+    "primaryVariantLowest": #f7bb701a,
+  ),
+);
+
+$ux-deepOrange: (
+  "light": (
+    "primary": #8b4f25,
+    "secondary": #755846,
+    "outlineVariant": #d7c2b8,
+    "secondaryContainer": #ffdbc8,
+    "outline": #84746b,
+    "onOutline": 0 0 0 1px #84746b inset,
+    "outlineContainer": 1px solid #84746b,
+    "background": #fff8f5,
+    "surfaceContainer": #fcebe2,
+    "onSurface": #221a15,
+    "surfaceContainerHigh": #f6e5dc,
+    "primaryVariant": #8b4f25e6,
+    "onPrimary": #ffffff,
+    "surfaceContainerlow": #fff1ea,
+    "secondaryContainerVariant": #ffdbc8e6,
+    "surfaceContainerHighest": #f0dfd7,
+    "surfaceDim": #e7d7cf,
+    "surface": #fff8f5,
+    "surfaceContainerLowest": #ffffff,
+    "onSurfaceVariant": #f4ded3,
+    "onSurfaceVariantVariant": #f4ded3e6,
+    "surfaceDimVariant": #e7d7cfe6,
+    "primaryVariantLowest": #8b4f251a,
+  ),
+  "dark": (
+    "primary": #ffb689,
+    "secondary": #e5bfa9,
+    "outlineVariant": #52443c,
+    "secondaryContainer": #5c4130,
+    "outline": #9f8d83,
+    "onOutline": 0 0 0 1px #9f8d83 inset,
+    "outlineContainer": 1px solid #9f8d83,
+    "background": #19120d,
+    "surfaceContainer": #261e19,
+    "onSurface": #f0dfd7,
+    "surfaceContainerHigh": #312823,
+    "primaryVariant": #ffb689e6,
+    "onPrimary": #512300,
+    "surfaceContainerlow": #221a15,
+    "secondaryContainerVariant": #5c4130e6,
+    "surfaceContainerHighest": #3d332d,
+    "surfaceDim": #19120d,
+    "surface": #19120d,
+    "surfaceContainerLowest": #140d08,
+    "onSurfaceVariant": #52443c,
+    "onSurfaceVariantVariant": #52443ce6,
+    "surfaceDimVariant": #19120de6,
+    "primaryVariantLowest": #ffb6891a,
+  ),
+);
+
+$ux-pink: (
+  "light": (
+    "primary": #8d4959,
+    "secondary": #75565c,
+    "outlineVariant": #d6c2c4,
+    "secondaryContainer": #ffd9df,
+    "outline": #847375,
+    "onOutline": 0 0 0 1px #847375 inset,
+    "outlineContainer": 1px solid #847375,
+    "background": #fff8f7,
+    "surfaceContainer": #fbeaeb,
+    "onSurface": #22191b,
+    "surfaceContainerHigh": #f5e4e6,
+    "primaryVariant": #8d4959e6,
+    "onPrimary": #ffffff,
+    "surfaceContainerlow": #fff0f1,
+    "secondaryContainerVariant": #ffd9dfe6,
+    "surfaceContainerHighest": #efdee0,
+    "surfaceDim": #e7d6d8,
+    "surface": #fff8f7,
+    "surfaceContainerLowest": #ffffff,
+    "onSurfaceVariant": #f3dde0,
+    "onSurfaceVariantVariant": #f3dde0e6,
+    "surfaceDimVariant": #e7d6d8e6,
+    "primaryVariantLowest": #8d49591a,
+  ),
+  "dark": (
+    "primary": #ffb1c0,
+    "secondary": #e4bdc3,
+    "outlineVariant": #524345,
+    "secondaryContainer": #5c3f44,
+    "outline": #9f8c8f,
+    "onOutline": 0 0 0 1px #9f8c8f inset,
+    "outlineContainer": 1px solid #9f8c8f,
+    "background": #191113,
+    "surfaceContainer": #261d1f,
+    "onSurface": #efdee0,
+    "surfaceContainerHigh": #312829,
+    "primaryVariant": #ffb1c0e6,
+    "onPrimary": #551d2c,
+    "surfaceContainerlow": #22191b,
+    "secondaryContainerVariant": #5c3f44e6,
+    "surfaceContainerHighest": #3c3234,
+    "surfaceDim": #191113,
+    "surface": #191113,
+    "surfaceContainerLowest": #140c0d,
+    "onSurfaceVariant": #524345,
+    "onSurfaceVariantVariant": #524345e6,
+    "surfaceDimVariant": #191113e6,
+    "primaryVariantLowest": #ffb1c01a,
+  ),
+);
+
+$theme-color-map: (
+  "ux-green-light": map-get($ux-green, "light"),
+  "ux-green-dark": map-get($ux-green, "dark"),
+  "ux-indigo-light": map-get($ux-indigo, "light"),
+  "ux-indigo-dark": map-get($ux-indigo, "dark"),
+  "ux-base-light": map-get($ux-base, "light"),
+  "ux-base-dark": map-get($ux-base, "dark"),
+  "ux-blue-light": map-get($ux-blue, "light"),
+  "ux-blue-dark": map-get($ux-blue, "dark"),
+  "ux-teal-light": map-get($ux-teal, "light"),
+  "ux-teal-dark": map-get($ux-teal, "dark"),
+  "ux-yellow-light": map-get($ux-yellow, "light"),
+  "ux-yellow-dark": map-get($ux-yellow, "dark"),
+  "ux-orange-light": map-get($ux-orange, "light"),
+  "ux-orange-dark": map-get($ux-orange, "dark"),
+  "ux-deepOrange-light": map-get($ux-deepOrange, "light"),
+  "ux-deepOrange-dark": map-get($ux-deepOrange, "dark"),
+  "ux-pink-light": map-get($ux-pink, "light"),
+  "ux-pink-dark": map-get($ux-pink, "dark"),
+);
+
+$theme-variables: (
+  // primary背景色
+  "primary-bg": "primary",
+  // 主菜单背景色
+  "top-menu-bg": "surface",
+  // 主菜单border色
+  "menu-border": "outline",
+  // 主菜单active背景色
+  "top-menu-active-bg": "surface",
+  // 主菜单文字色
+  "top-menu-color": "primary",
+  // pop标题背景色
+  "pop-title-bg": "outline",
+  // pop标题文字色
+  "pop-title-color": "onPrimary",
+  // pop内容背景色
+  "pop-content-bg": "background",
+  // alert 文字颜色
+  "alert-text": "primaryVariant",
+  // 弹出气泡背景色
+  "pop-card-bg": "surfaceContainerLowest",
+  // 切换语言hover背景色
+  "lang-hover-bg": "surfaceContainer",
+  // 切换语言active背景色
+  "lang-active-bg": "surfaceContainerHighest",
+  // 切换语言文字色
+  "lang-color": "onSurface",
+  // 子菜单背景色
+  "submenu-bg": "surface",
+  // 子菜单文字
+  "submenu-color": "onSurface",
+  // 子菜单文字hover色
+  "submenu-hover-color": "primary",
+  "body-bg": "surface",
+  // // 页面菜单背景色
+  "page-menu-bg": "surface",
+  // // 页面菜单hover背景色
+  "page-menu-hover-bg": "surfaceContainerHigh",
+  // // 页面菜单选中背景色
+  "page-menu-selected-bg": "secondaryContainer",
+  // // 页面菜单hover文字色
+  "page-menu-hover-color": "onSurface",
+  // // 页面菜单边框色
+  "page-menu-border": "outline",
+  // // 页面菜单文字颜色
+  "page-menu-color": "onSurface",
+  // // 页面菜单文字选中颜色
+  "page-menu-selected-color": "onSurface",
+  // // 页面子菜单文字选中颜色
+  "page-submenu-color-selected": "onSurface",
+  // // label文字色
+  "label-color": "onSurface",
+  // // textarea文字色
+  "input-color": "onSurface",
+  // // textarea背景色
+  "input-bg": "surface",
+  // // textarea边框颜色
+  "input-border": "outline",
+  // // textarea阴影
+  "input-shadow": "outlineVariant",
+  // // textarea focus阴影
+  "input-focus-shadow": "outlineVariant",
+  // // textarea hover
+  "input-border-hover": "onSurface",
+  // // textarea focus
+  "input-focus-border": "primary",
+  // // json转换显示行数的背景色
+  "light-bg": "surfaceContainerHighest",
+  // // json转换显示行数的文字色
+  "text-color": "onSurface",
+  // // textarea 选中文字颜色
+  "input-selection-color": "onSurface",
+  // // textarea 选中背景颜色
+  "input-selection-bg": "secondaryContainerVariant",
+  // // input 光标颜色
+  "input-caret-color": "primary",
+  // // input 图标颜色
+  "input-icon-color": "outline",
+  // // json转换后数字颜色
+  // "tertiary-text-color": "onSurface",
+  // // json转换后字符串颜色
+  // "secondary-text-color": #{$success-text-emphasis-dark},
+  // // 蓝色按钮文字色
+  "btn-color": "onPrimary",
+  // // 蓝色按钮背景色
+  "primary-btn-bg": "surfaceContainerHighest",
+  // // 蓝色按钮边框色
+  "primary-btn-border": "outline",
+  // // 蓝色按钮hover背景色
+  "primary-btn-hover-bg": "outline",
+  // // 蓝色文字色
+  "primary-text-color": "onSurface",
+  // // select背景色
+  "select-bg": "surface",
+  // // select边框色
+  "select-border": "outline",
+  // // select边框hover色
+  "select-border-hover-color": "onSurface",
+  // // select边框focus色
+  "select-border-focus-color": "primary",
+  // // select阴影
+  "select-shadow-color": "outlineVariant",
+  // // select选项文字色
+  "select-option-color": "onSurface",
+  // // select选项背景色
+  "select-option-bg": "surfaceContainer",
+  // // select选项选中背景色
+  "select-option-selected-bg": "surfaceDim",
+  // // select选项hover背景色
+  "select-option-hover-bg": "surfaceContainerHighest",
+  // // select文字色
+  "select-text-color": "onSurface",
+  // // 标题文字色
+  "title-color": "onSurface",
+  // // checkbox文字色
+  "checkbox-label-color": "onSurface",
+  // // checkbox背景色
+  "checkbox-bg": "surface",
+  // // checkbox背景色
+  "checkbox-checked-bg": "primary",
+  // // checkbox边框色
+  "checkbox-border": "outline",
+  // // 二维码转换tab背景色
+  "qr-tab-bg": "surfaceContainerHighest",
+  // // 二维码转换tab选中背景色
+  "qr-tab-selected-bg": "secondaryContainer",
+  // // 二维码转换tab hover文字色
+  "qr-tab-hover-color": "onSurface",
+  // // 二维码转换二维码边框色
+  "qrcode-box-border": "outline",
+  // // 二维码转换二维码背景色
+  "qrcode-box-bg": "surfaceContainerHighest",
+  // // 角色管理菜单阴影
+  "role-menu-shadow": "outlineVariant",
+  // // 角色管理菜单背景色
+  "role-menu-bg": "surface",
+  // // 角色管理菜单文字色
+  "role-menu-color": "onSurface",
+  // // 角色管理子菜单背景色
+  "role-menu-item-bg": "surfaceDim",
+  // // 角色管理子菜单hover背景色
+  "role-menu-item-hover-bg": "surfaceContainerHigh",
+  // // 角色管理子菜单文字色
+  "role-menu-item-color": "onSurface",
+  // // 角色管理表格文字色
+  "role-table-color": "onSurface",
+  // // 角色管理表格文字色
+  "role-table-head-color": "onSurface",
+  // // 角色管理表格背景色
+  "role-table-bg": "surface",
+  // // 角色管理表格行hover背景色
+  "role-table-row-hover-bg": "surfaceContainerHigh",
+  // // 角色管理表格行selected背景色
+  "table-row-selected-bg": "surfaceContainerHigh",
+  // // 角色管理表格表头背景色
+  "role-table-header-bg": "secondaryContainer",
+  // // 角色管理表格边框色
+  "role-table-border": "outline",
+  // // 分页背景
+  "role-pagination-bg": "surfaceContainerHighest",
+  // // 分页边框色
+  "role-pagination-border": "outline",
+  // // 分页边框disabled色
+  "role-pagination-disabled-border": "outline",
+  // // 分页边框hover色
+  "role-pagination-hover-border": "outline",
+  // // 分页文字hover色
+  "role-pagination-hover-color": "onSurface",
+  // // 分页文字色
+  "role-pagination-color": "onSurface",
+  // // 角色管理开关背景色
+  "role-switcher-bg": "primary",
+  // // 检索条件label color
+  "search-label-color": "onSurface",
+  // // 检索条件边框
+  "search-box-border": "outline",
+  // // 检索条件背景色
+  "search-bg": "surface",
+  // // 检索按钮阴影
+  "search-btn-shadow": "outlineVariant",
+  // // 检索按钮文字色
+  "search-btn-color": "onPrimary",
+  // // 检索按钮背景色
+  "search-btn-bg": "primary",
+  // // 检索按钮背景色
+  "search-btn-border": "outline",
+  // // 检索按钮hover文字色
+  "search-btn-hover-color": "onPrimary",
+  // // 检索按钮hover边框色
+  "search-btn-hover-border": "outline",
+  // // 检索按钮hover背景色
+  "search-btn-hover-bg": "primaryVariant",
+  // // link color
+  "link-color": "primary",
+  // pop背景色
+  "popup-bg": "background",
+  // pop边框
+  "popup-border": "outline",
+  // pop标题背景
+  "popup-header": "outline",
+  // 主题选项hover背景
+  "theme-list-hover-bg": "surfaceContainerHigh",
+  // 主题选项selected背景
+  "theme-list-selected-bg": "surfaceContainerHigh"
+);

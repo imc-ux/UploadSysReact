@@ -1,0 +1,63 @@
+.site-bg {
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.site-bg-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: block;
+}
+
+.site-bg-img {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  display: block;
+  background-image: url(../../static/images/common/Dark-Matterhorn.png);
+}
+
+.site-bg,
+.site-bg-img,
+.site-bg-overlay,
+.site-bg-effect,
+.cloud {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.site-bg-img,
+.site-bg-video,
+.site-bg-overlay,
+.site-bg-effect {
+  position: absolute;
+}
+
+.cloud {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  display: none;
+}
+
+/* cloud */
+.cloud-01 {
+  background-image: url(../../static/images/common/cloud-01.png);
+}
+
+.cloud-02 {
+  background-image: url(../../static/images/common/cloud-02.png);
+}
+
+.cloud-03 {
+  background-image: url(../../static/images/common/cloud-03.png);
+}
+
+.velocity-animating {
+  -webkit-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}

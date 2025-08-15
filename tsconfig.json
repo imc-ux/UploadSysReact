@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    // "lib": ["DOM"],
+    "noImplicitAny": true,
+    "module": "esnext",
+    "target": "es5",
+    "jsx": "preserve",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    // "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*", "../advancedcommon/src/*"],
+      "Static/*": ["./static/*"],
+      "View/*": ["./src/view/*"],
+      "ViewMenu/*": ["./src/view/menu/*"],
+      "Style/*": ["./src/style/*"],
+      "Router/*": ["./src/router/*"],
+      "Common/*": ["./src/common/*"],
+      "Context/*": ["./src/common/context/*"],
+      "Action/*": ["./src/common/action/*"],
+      "Reducer/*": ["./src/common/reducer/*"],
+      "Helper/*": ["./src/common/helper/*"],
+      "Remote/*": ["./src/common/remote/*"],
+      "Service/*": ["./src/common/service/*"],
+      "Components/*": ["./src/common/components/*"],
+      "Vo/*": ["./src/common/vo/*"]
+    }
+  },
+  "include": ["./src/**/*"]
+}
