@@ -5,6 +5,10 @@ body {
   background-color: var(--#{$prefix}body-bg);
 }
 
+.index-z {
+  z-index: 7;
+}
+
 .json-menu {
   // background-color: #f2f3f5;
   // border-right: 2px solid #f3f4f7;
