@@ -5,6 +5,7 @@ interface MenuProps {
 }
 
 export const MENU_LIST = [
+  { id: 7, name: "编码", parent: 0 },
   { id: 1, name: "Json格式化", parent: 0 },
   { id: 2, name: "Base64", parent: 0 },
   { id: 3, name: "时间戳", parent: 0 },
@@ -17,12 +18,11 @@ export const MENU_LIST = [
       { id: 6, name: "SHA-256", parent: 4 },
     ],
   },
-  { id: 7, name: "编码", parent: 0 },
   { id: 8, name: "二维码转换", parent: 0 },
 ];
 
 export default function Menu(props: MenuProps) {
-  const { currentId = 0 } = props;
+  const { currentId = 7 } = props;
   return (
     <div className="json-menu">
       {MENU_LIST.map((menu) => {

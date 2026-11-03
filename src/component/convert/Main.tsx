@@ -13,8 +13,8 @@ interface IMenuContext {
 export const menuContext = createContext<IMenuContext>(null);
 
 export default function Main() {
-  const [id, setId] = useState(1);
-  const [currentId, setCurrentId] = useState(0);
+  const [id, setId] = useState(MENU_LIST[0].id);
+  const [currentId, setCurrentId] = useState(MENU_LIST[0].id);
   const [showingMenu, setShowingMenu] = useState<number[]>([]);
 
   function onMenuClickHandler(id: number) {

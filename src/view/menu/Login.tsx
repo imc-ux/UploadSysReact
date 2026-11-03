@@ -197,6 +197,7 @@ export default function Login() {
   return (
     <div w-full flex justify-center items-center h-screen>
       <main
+        className="index-z"
         flex="~ col"
         justify-center
         items-center

@@ -264,6 +264,8 @@ export default function Main() {
     const data = templateDataListRef.current.find(
       (elem: any) => elem.type === item.type
     );
+    console.log("menu Data", data);
+    console.log("menu template", template);
     switch (item.type) {
       case MenuType.BUSINESS:
         return <TemplateComponent template={template} data={data} />;
@@ -338,7 +340,8 @@ export default function Main() {
               items-center
               m-20px
               menu-text
-              className="<md:flex md:hidden">
+              className="<md:flex md:hidden"
+            >
               <div icon-box onClick={onMenuCollapseBtnClickHandler}>
                 {showCompactMenu ? (
                   <span className="i-mdi-close" text-2xl />
@@ -371,7 +374,8 @@ export default function Main() {
                   cursor-pointer
                   overflow-visible
                   onMouseEnter={() => onMainMenuMouseEnterHandler(index)}
-                  onMouseLeave={onMainMenuMouseLeaveHandler}>
+                  onMouseLeave={onMainMenuMouseLeaveHandler}
+                >
                   <div
                     menu-text
                     font-bold
@@ -394,7 +398,8 @@ export default function Main() {
                           : " translate-x-full opacity-0"
                         : "")
                     }
-                    onClick={() => onMainMenuClickHandler(index)}>
+                    onClick={() => onMainMenuClickHandler(index)}
+                  >
                     <span
                       relative
                       data-title={t(item.type)}
@@ -407,7 +412,8 @@ export default function Main() {
                       pointer-events-none
                       preserve-3d
                       text-4
-                      after="content-[attr(data-title)] absolute left-0 origin-center-top preserve-3d translate-y-full -rotate-x-90">
+                      after="content-[attr(data-title)] absolute left-0 origin-center-top preserve-3d translate-y-full -rotate-x-90"
+                    >
                       {t(item.type)}
                     </span>
                   </div>
@@ -436,10 +442,12 @@ export default function Main() {
                   content={
                     <div
                       className="icon-box"
-                      onClick={onSwitchLanguageBtnClickHandler}>
+                      onClick={onSwitchLanguageBtnClickHandler}
+                    >
                       <span className="i-mdi-translate text-2xl" />
                     </div>
-                  }>
+                  }
+                >
                   <SwitchLanguageContent
                     onClick={onSwitchLanguageItemClickHandler}
                   />
@@ -466,7 +474,8 @@ export default function Main() {
                 mr-20px
                 ml-20px
                 mb-10px
-                className="<md:flex md:hidden">
+                className="<md:flex md:hidden"
+              >
                 {/* 版本 */}
                 {/* 主题 */}
                 <div icon-box onClick={onSwitchThemeBtnClickHandler}>
@@ -486,10 +495,12 @@ export default function Main() {
                   content={
                     <div
                       className="icon-box"
-                      onClick={onSwitchLanguageBtnClickHandler}>
+                      onClick={onSwitchLanguageBtnClickHandler}
+                    >
                       <span className="i-mdi-translate text-2xl" />
                     </div>
-                  }>
+                  }
+                >
                   <SwitchLanguageContent
                     onClick={onSwitchLanguageItemClickHandler}
                   />
@@ -504,7 +515,8 @@ export default function Main() {
                   list-none
                   cursor-pointer
                   overflow-visible
-                  h-10>
+                  h-10
+                >
                   <a
                     menu-text
                     font-bold
@@ -516,13 +528,15 @@ export default function Main() {
                     ml-20px
                     relative
                     bg={index === currentSelectIndex ? "active" : ""}
-                    onClick={() => onCompactMainMenuClickHandler(index)}>
+                    onClick={() => onCompactMainMenuClickHandler(index)}
+                  >
                     <span
                       relative
                       data-title={t(item.type)}
                       block
                       mr-10px
-                      ml-10px>
+                      ml-10px
+                    >
                       {t(item.type)}
                     </span>
                   </a>
@@ -559,7 +573,8 @@ export default function Main() {
                 }
                 onClick={() => onSubMenuSelectedHandler(index)}
                 onMouseEnter={() => onMainMenuMouseEnterHandler(index)}
-                onMouseLeave={onMainMenuMouseLeaveHandler}>
+                onMouseLeave={onMainMenuMouseLeaveHandler}
+              >
                 {templateContent[index]}
                 {/* {renderSubMenuTemplate(item)} */}
               </div>
@@ -630,7 +645,8 @@ function SwitchLanguageContent(props: any) {
               "list-none rounded-md p-3 whitespace-nowrap lang-color leading-30px cursor-pointer hover:lang-hover-bg" +
               (selectLangIndex === index ? " lang-active-bg" : "")
             }
-            onClick={() => onLanguageItemClick(item.code)}>
+            onClick={() => onLanguageItemClick(item.code)}
+          >
             {item.name}
           </li>
         ))}
